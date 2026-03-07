@@ -30,7 +30,7 @@ const CurrentlyPlayingMovies = async() =>{
 
 useEffect(()=>{
     !NowPlayingMovies && CurrentlyPlayingMovies();
-},);
+});
 }
 
 // export default useNowPlayingMovies;
