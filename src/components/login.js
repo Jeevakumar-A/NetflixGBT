@@ -28,7 +28,8 @@ if(Signupform){
 createUserWithEmailAndPassword(auth, email.current.value, password.current.value)
 .then((userCredential) => {
     // Signed up
-    const user = userCredential.user;
+    const user1 = userCredential.user;
+    console.log(user1);
 
 //profile update whenever the new user is created
 
@@ -61,7 +62,7 @@ setError(error.message);
         signInWithEmailAndPassword(auth, email.current.value, password.current.value).then((userCredential) => {
     // Signed in
     const user = userCredential.user;
-    // console.log(user);
+    console.log(user);
 }).catch((error) => {
     const errorCode = error.code;
     const errorMessage = error.message;
